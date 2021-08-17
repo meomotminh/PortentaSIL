@@ -1,0 +1,12 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "/home/tienloi/Documents/arduino-1.8.15-linux64/arduino-1.8.15/libraries",
+  "builtInToolsFolders": "/home/tienloi/Documents/arduino-1.8.15-linux64/arduino-1.8.15/tools-builder,/home/tienloi/Documents/arduino-1.8.15-linux64/arduino-1.8.15/hardware/tools/avr,/home/tienloi/.arduino15/packages",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.path=/media/tienloi/Mai_HDD/InternJungheinrich/arduino/debug/build,build.warn_data_percentage=75,runtime.tools.dfu-util.path=/home/tienloi/.arduino15/packages/arduino/tools/dfu-util/0.10.0-arduino1,runtime.tools.dfu-util-0.10.0-arduino1.path=/home/tienloi/.arduino15/packages/arduino/tools/dfu-util/0.10.0-arduino1,runtime.tools.openocd.path=/home/tienloi/.arduino15/packages/arduino/tools/openocd/0.11.0-arduino2,runtime.tools.openocd-0.11.0-arduino2.path=/home/tienloi/.arduino15/packages/arduino/tools/openocd/0.11.0-arduino2,runtime.tools.arm-none-eabi-gcc.path=/home/tienloi/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4,runtime.tools.arm-none-eabi-gcc-7-2017q4.path=/home/tienloi/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4",
+  "fqbn": "arduino:mbed_portenta:envie_m7",
+  "hardwareFolders": "/home/tienloi/Documents/arduino-1.8.15-linux64/arduino-1.8.15/hardware,/home/tienloi/.arduino15/packages",
+  "otherLibrariesFolders": "/home/tienloi/Arduino/libraries",
+  "runtime.ide.version": "10815",
+  "sketchLocation": "/media/tienloi/Mai_HDD/InternJungheinrich/arduino/debug/debug.ino"
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/variants/PORTENTA_H7_M7"
+  },
+  {
+    "Sourcefile": "/media/tienloi/Mai_HDD/InternJungheinrich/arduino/debug/build/sketch/debug.ino.cpp",
+    "Include": "ThreadDebug.h",
+    "Includepath": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/ThreadDebug/src"
+  },
+  {
+    "Sourcefile": "/media/tienloi/Mai_HDD/InternJungheinrich/arduino/debug/build/sketch/debug.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/ThreadDebug/src/ThreadDebug.cpp",
+    "Include": "MRI.h",
+    "Includepath": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src"
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/ThreadDebug/src/ThreadDebug.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/buffer.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_break_watch.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_common.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_continue.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_file.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_memory.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_query.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_registers.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_step.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_thread.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_vcont.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/context.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/gdb_console.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/memory.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/mri.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/packet.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/token.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/try_catch.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/memory/native/native-mem.c",
+    "Include": "",
+    "Includepath": null
+  }
+]

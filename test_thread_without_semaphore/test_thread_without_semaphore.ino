@@ -12,40 +12,73 @@ Semaphore sem(1);
 //unsigned char *mem1;
 
 Thread engine;
-//Thread engine;
 Thread brake;
 Thread fork;
 
 int commonCount = 0;
 bool countUp = true;
+bool countUp2 = true;
 
-void count(void const *name){
+
+// create square wave with f = 100kHz
+void engineTask(void const *name){
   while (true){
     
-
-    if (commonCount == 100) countUp = false;
-    
-    if (commonCount == 0) countUp = true;
-             
     if (countUp){
-      commonCount++;
-    }
-    else {
-      commonCount--;
+      digitalWrite(7, HIGH);              
+    } else {
+      digitalWrite(7, LOW);  
     }
 
-    String toPrint = String((const char *)name) + ": " + commonCount;    
-    Serial.println(toPrint);
-      
+    commonCount++;
+
+    //Serial.print((char *)name);
+    //Serial.print(": ");
+    //Serial.println(commonCount);
+    
+    countUp = !countUp;
+    
+    
+    ThisThread::sleep_for(500);
+  }
+}
+
+// create square wave with f = 100kHz
+void brakeTask(void const *name){
+  while (true){
+    
+    if (countUp2){
+      digitalWrite(6, HIGH);     
+               
+    } else {
+      digitalWrite(6, LOW);  
+    }
+
+    commonCount++;
+    
+    //Serial.print((char *)name);
+    //Serial.print(": ");
+    //Serial.println(commonCount);
+    
+    countUp2 = !countUp2;
+    
+    
+    ThisThread::sleep_for(500);
   }
 }
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  engine.start(mbed::callback(count, (void *)"engine"));
-  brake.start(mbed::callback(count, (void *)"brake"));
-  fork.start(mbed::callback(count, (void *)"fork"));
+  
+  // define 3 ports
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  
+  engine.start(mbed::callback(engineTask, (void *)"engine"));
+  brake.start(mbed::callback(brakeTask, (void *)"brake"));
+  //fork.start(mbed::callback(count, (void *)"fork"));
 }
 
 void loop() {

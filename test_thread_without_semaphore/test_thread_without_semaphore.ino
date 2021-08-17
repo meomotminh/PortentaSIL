@@ -25,9 +25,9 @@ void engineTask(void const *name){
   while (true){
     
     if (countUp){
-      digitalWrite(5, HIGH);              
+      digitalWrite(7, HIGH);              
     } else {
-      digitalWrite(5, LOW);  
+      digitalWrite(7, LOW);  
     }
 
     commonCount++;
@@ -39,7 +39,7 @@ void engineTask(void const *name){
     countUp = !countUp;
     
     
-    ThisThread::sleep_for(5000);
+    ThisThread::sleep_for(500);
   }
 }
 
@@ -63,7 +63,7 @@ void brakeTask(void const *name){
     countUp2 = !countUp2;
     
     
-    ThisThread::sleep_for(5000);
+    ThisThread::sleep_for(500);
   }
 }
 

@@ -1,0 +1,24 @@
+/media/tienloi/Mai_HDD/InternJungheinrich/arduino/debug/build/libraries/MRI/core/mri.c.o: \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/mri.c \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/mri.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/buffer.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/hex_convert.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/try_catch.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/packet.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/token.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/core.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/context.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/platforms.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/posix4win.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/semihost.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_common.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_file.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_registers.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_memory.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_continue.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_query.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_break_watch.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_step.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_thread.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/cmd_vcont.h \
+ /home/tienloi/.arduino15/packages/arduino/hardware/mbed_portenta/2.3.1/libraries/MRI/src/core/memory.h

@@ -264,3 +264,32 @@ Ref: Kavi, K. 2013 *Multithreading Implementations* available at https://www.res
     - A run-time image consists of 5 (logically) contiguous sections. Code & Data sections are loaded directly from the executable file. BSS section is created by the BSS section size in the executable file header.
     - in execution image, the Code, Data and BSS sections are fixed and do not change.
     - Heap area is for dynamic memory allocation within the execution image. The stack is for functions calls during execution. Stack is logically at the high address end of the execution image and grows downward
+
+## Function Call Convention in C
+    call convention of C consist of steps bw calling function (caller) and called function (callee)
+    ---------------Caller-------------------
+    (1). loading first 4 parameters in r0-r3; push any extra parameters on stack
+    (2). transfers control to callee by BL callee
+    ---------------Callee-------------------
+    (3). save LR, FP(r12) on stack, establish stack frame (FP point at saved LR)
+    (4). shift SP downward to allocate local variables and temp spaces on stack
+    (4). use parameters, locals, and globals to perform the function task
+    (5). compute and load return value in R0, pop stack to return control to caller
+    ---------------Caller-------------------
+    (6). get return value from R0
+    (7). clean up stack by popping off extra parameters, if any
+
+     High         SP                        Low
+     ----|----|----|------------------------
+         | f  |  e |    
+     ----| exParam |------------------------
+
+     (1) push LR, FP into stack and letting FP(r12) point at the saved LR
+     (2) Then shift SP downward (toward low address) to allocate space for local var and temp working area
+
+     High                     SP            Low
+              |push |subtract SP by #32           
+     ----| +8 | +4  | 0  | -4  | -8 | -12 | -16 | -20 | -24 | -28 | -32 | -36 |
+         | f  |  e  | LR | FP  |    |     |     |     |     |     |     |     |
+     ----| exParam  |-|--|-----| local var, working space                     |
+                      FP          

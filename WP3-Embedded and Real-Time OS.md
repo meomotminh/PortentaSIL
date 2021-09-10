@@ -174,5 +174,29 @@ ref: Wang, K.C. (2017), *Embedded and Real-Time Operating Systems*, Switzerland 
                 - ARM Versatile board architecture is well documented
                 - QEMU can boot up the emulated ARM Versatilepb virtual machine directly                
 
+    - Although the stack is a piece of contiguous memory, logically each function can only access a limited area of the stack. The stack area visible to a function is called the stack frame of the function, and FP(r12) is called the stack frame pointer.
 
+    // return to caller
+        sub     sp, fp, #4      // sp = fp - 4 (pointed at saved FP)
+        ldmfd   sp!, {fp, pc}   // return to caller
     
+    deallocate the space in stack, pops the saved FP and LR into PC, causing execution return to the caller.
+
+    - The ARM C compiler generated code only uses r0-r3. If a function defines any register variables, , they are assigned the registers r4-r11, which are saved in stack first and restored later when the function returns. If a function does not call out, no need to save/restore the link register LR. In that case, the ARM C compiler generated code does not save and restore the link register LR, allowing faster entry/exit of function calls.
+
+    #### Long Jump
+
+    - in a sequence of function calls, main() -> A() -> B() -> C()
+    when a called function finishes, it normally returns to the calling function, C() return to B(), which return to A(). It is also possible to return directly to an earlier function in the calling sequence by a long jump. 
+
+    - in the above longjump.c program, the main() function call setjmp(), which saves the current execution envi in a jmp_buf structure and returns 0 -> proceeds to call A() which call B(). While in B(), if user choose not to return by long jump, the function will show the normal return sequence. if user choose to return by longjmp, execution will return to the last saved environment with a nonzero value.
+    - principle of long jump is very simple. when a function finish, it return by the (callerLR, callerFP) in the current stack frame, as following diagram:
+        ---------------------------------------------------
+        | params | callerLR | callerFP | ........ | 
+        ---------------|------------------------------|----
+                    CPU.FP                          CPU.SP
+
+    if replace (callerLR, callerFP) with (savedLR, savedFP) of an earlier function in the calling sequence, execution would return to that function directly. 
+
+    - Long Jump can be used to abort a function in a calling sequence, causing execution to resume to a known env saved earlier. In addition to (savedLR, savedFP), setjmp() may also save other CPU registers and the caller's SP, allowing longjmp() to restore the complete execution env of the original function. although rarely used in user mode programs, long jump is a common technique in systems programming. Exp, it may be used in a signal catcher to bypass a user mode function that caused an exception or trap error. 
+
